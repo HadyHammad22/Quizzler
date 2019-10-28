@@ -50,7 +50,7 @@ class ChooseCategory: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toQuiz"{
-            guard let viewController = segue.destination as? ViewController else {return}
+            guard let viewController = segue.destination as? ShowQuestionsVC else {return}
             if let arr = sender as? [Question]{
                 viewController.allQuestions = arr
             }

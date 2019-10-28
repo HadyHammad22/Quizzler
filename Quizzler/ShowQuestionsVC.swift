@@ -1,5 +1,5 @@
 //
-//  ScoreVC.swift
+//  ShowQuestionsVC.swift
 //  Quizzler
 //
 //  Created by Hady Hammad on 10/25/19.
