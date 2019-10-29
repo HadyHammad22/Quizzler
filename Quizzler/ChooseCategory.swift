@@ -12,11 +12,11 @@ import Alamofire
 class ChooseCategory: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func btnPressed(_ sender: UIButton) {
         switch sender.tag {
+            
         case 1:
             getAnyQuestions(url: URLs.anyCategory)
         case 2:
@@ -35,6 +35,7 @@ class ChooseCategory: UIViewController {
             getAnyQuestions(url: URLs.geography)
         default:
             print("Not selected")
+            
         }
     }
     

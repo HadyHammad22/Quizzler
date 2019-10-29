@@ -26,7 +26,7 @@ class ShowQuestionsVC: UIViewController{
         
         let firstQuestion = allQuestions[0]
         category = firstQuestion.category!
-        questionLabel.text = firstQuestion.questionText
+        questionLabel.text = firstQuestion.questionText?.replaceQuot()
         
     }
     
@@ -54,7 +54,7 @@ class ShowQuestionsVC: UIViewController{
     func nextQuestion() {
         
         if questionNumber < allQuestions.count {
-            questionLabel.text = allQuestions[questionNumber].questionText
+            questionLabel.text = allQuestions[questionNumber].questionText?.replaceQuot()
             updateUI()
         }else{
             performSegue(withIdentifier: "toScore", sender: nil)
