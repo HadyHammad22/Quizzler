@@ -94,7 +94,7 @@
 			children = (
 				74ABB22623685B8D00603385 /* Extensions */,
 				74E992502364671200483E97 /* Constants */,
-				EBB1C72D1B946C580011F5C3 /* Controller */,
+				EBB1C72D1B946C580011F5C3 /* ViewControllers */,
 				EBB1C72C1B946C530011F5C3 /* Model */,
 				EBB1C72B1B946C4B0011F5C3 /* View */,
 				633646BC1B8C657400FF45E2 /* Supporting Files */,
@@ -105,6 +105,8 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				633646C51B8C657400FF45E2 /* Images.xcassets */,
+				633646BE1B8C657400FF45E2 /* AppDelegate.swift */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
 			);
@@ -130,7 +132,6 @@
 		EBB1C72B1B946C4B0011F5C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				633646C51B8C657400FF45E2 /* Images.xcassets */,
 				633646C21B8C657400FF45E2 /* Main.storyboard */,
 				742C24292362EB190018A6BB /* RoundView.swift */,
 			);
@@ -146,15 +147,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		EBB1C72D1B946C580011F5C3 /* Controller */ = {
+		EBB1C72D1B946C580011F5C3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				633646BE1B8C657400FF45E2 /* AppDelegate.swift */,
 				742C242B236319DE0018A6BB /* ChooseCategory.swift */,
 				633646C01B8C657400FF45E2 /* ShowQuestionsVC.swift */,
 				74E9925123646BCF00483E97 /* ScoreVC.swift */,
 			);
-			name = Controller;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
