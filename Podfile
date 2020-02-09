@@ -5,5 +5,5 @@ target 'Quizzler' do
   use_frameworks!
 
   pod 'Alamofire'
-
+  pod 'ProgressHUD'	
 end

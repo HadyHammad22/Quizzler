@@ -6,7 +6,7 @@
 //  Copyright © 2019 Hady Hammad. All rights reserved.
 //
 
-import Foundation
+import UIKit
 class RoundView:UIView{
     
     override func awakeFromNib() {

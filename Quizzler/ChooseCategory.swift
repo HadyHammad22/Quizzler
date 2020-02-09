@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import ProgressHUD
 
 class ChooseCategory: UIViewController {
     override func viewDidLoad() {
