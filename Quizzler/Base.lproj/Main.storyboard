@@ -224,10 +224,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="award" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-Bo-98B">
                                 <rect key="frame" x="103.5" y="94" width="207" height="269"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llE-Jt-fZU" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llE-Jt-fZU">
                                 <rect key="frame" x="20" y="521" width="374" height="60"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tey-hB-yjS" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tey-hB-yjS">
                                         <rect key="frame" x="25" y="0.0" width="324" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-NW-P5Q">
@@ -262,11 +262,6 @@
                                             <constraint firstAttribute="trailing" secondItem="kpM-XU-BC2" secondAttribute="trailing" constant="10" id="LWT-mQ-8Yx"/>
                                             <constraint firstItem="gdl-NW-P5Q" firstAttribute="centerX" secondItem="tey-hB-yjS" secondAttribute="centerX" constant="-5" id="hnL-IA-Sww"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.80078691244125366" green="0.18198248744010925" blue="0.26458984613418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -277,11 +272,6 @@
                                     <constraint firstItem="tey-hB-yjS" firstAttribute="leading" secondItem="llE-Jt-fZU" secondAttribute="leading" constant="25" id="O4W-oI-Ftb"/>
                                     <constraint firstAttribute="height" constant="60" id="xPk-qw-XCr"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High score is 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-YK-LVK">
                                 <rect key="frame" x="119" y="413" width="176" height="48"/>
@@ -290,10 +280,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI9-OC-DhI">
-                                <rect key="frame" x="120" y="792" width="174" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="x0j-ff-CDf"/>
-                                </constraints>
+                                <rect key="frame" x="150.5" y="774" width="113" height="38"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <state key="normal" title="Restart Quiz">
                                     <color key="titleColor" red="0.99917560815811157" green="0.83052748441696167" blue="0.00012533548579085618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -306,22 +293,23 @@
                         <color key="backgroundColor" red="0.168471396" green="0.51802176239999997" blue="0.82454192640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hKe-Bo-98B" firstAttribute="top" secondItem="gA1-xz-bo8" secondAttribute="bottom" constant="50" id="0c6-5Q-Uj6"/>
-                            <constraint firstItem="JIV-qM-Dao" firstAttribute="top" secondItem="vI9-OC-DhI" secondAttribute="bottom" constant="30" id="6q6-d7-xWe"/>
+                            <constraint firstItem="JIV-qM-Dao" firstAttribute="top" secondItem="vI9-OC-DhI" secondAttribute="bottom" constant="50" id="6q6-d7-xWe"/>
                             <constraint firstItem="llE-Jt-fZU" firstAttribute="top" secondItem="cZr-YK-LVK" secondAttribute="bottom" constant="60" id="Jn1-u3-kvZ"/>
                             <constraint firstAttribute="trailing" secondItem="llE-Jt-fZU" secondAttribute="trailing" constant="20" id="MT8-QQ-LCY"/>
                             <constraint firstItem="hKe-Bo-98B" firstAttribute="width" secondItem="qvM-YM-Fvr" secondAttribute="width" multiplier="0.5" id="PZy-kV-zSc"/>
                             <constraint firstItem="llE-Jt-fZU" firstAttribute="leading" secondItem="qvM-YM-Fvr" secondAttribute="leading" constant="20" id="RTz-RX-yE6"/>
-                            <constraint firstAttribute="trailing" secondItem="vI9-OC-DhI" secondAttribute="trailing" constant="120" id="Rf0-GA-NbP"/>
+                            <constraint firstItem="vI9-OC-DhI" firstAttribute="centerX" secondItem="qvM-YM-Fvr" secondAttribute="centerX" id="bTJ-tt-BDX"/>
                             <constraint firstItem="hKe-Bo-98B" firstAttribute="centerX" secondItem="qvM-YM-Fvr" secondAttribute="centerX" id="bta-im-jMG"/>
                             <constraint firstItem="llE-Jt-fZU" firstAttribute="centerX" secondItem="qvM-YM-Fvr" secondAttribute="centerX" id="gmo-6l-r0K"/>
-                            <constraint firstItem="vI9-OC-DhI" firstAttribute="leading" secondItem="qvM-YM-Fvr" secondAttribute="leading" constant="120" id="nYg-I3-vvn"/>
                             <constraint firstItem="cZr-YK-LVK" firstAttribute="top" secondItem="hKe-Bo-98B" secondAttribute="bottom" constant="50" id="oEz-WU-Lyh"/>
                             <constraint firstItem="cZr-YK-LVK" firstAttribute="centerX" secondItem="qvM-YM-Fvr" secondAttribute="centerX" id="r7M-Xo-kTA"/>
                             <constraint firstItem="hKe-Bo-98B" firstAttribute="height" secondItem="qvM-YM-Fvr" secondAttribute="height" multiplier="0.3" id="vIN-gn-860"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="highScoreBackView" destination="llE-Jt-fZU" id="rH7-w3-weK"/>
                         <outlet property="highScoreLabel" destination="cZr-YK-LVK" id="8jl-kN-PkD"/>
+                        <outlet property="highScoreView" destination="tey-hB-yjS" id="9eo-1D-XD5"/>
                         <outlet property="scoreImage" destination="kpM-XU-BC2" id="D5L-2n-uOz"/>
                         <outlet property="scoreLabel" destination="AmS-sM-4et" id="nS5-Rr-1DA"/>
                     </connections>
