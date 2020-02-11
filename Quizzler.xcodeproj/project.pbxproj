@@ -103,7 +103,6 @@
 				74E992502364671200483E97 /* Constants */,
 				EBB1C72D1B946C580011F5C3 /* ViewControllers */,
 				EBB1C72C1B946C530011F5C3 /* Model */,
-				EBB1C72B1B946C4B0011F5C3 /* View */,
 				633646BC1B8C657400FF45E2 /* Supporting Files */,
 			);
 			path = Quizzler;
@@ -112,6 +111,7 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				633646C21B8C657400FF45E2 /* Main.storyboard */,
 				633646C51B8C657400FF45E2 /* Images.xcassets */,
 				633646BE1B8C657400FF45E2 /* AppDelegate.swift */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
@@ -144,14 +144,6 @@
 				74EC4D1823F2B4770081924E /* CategoryCVC.xib */,
 			);
 			name = CustomCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		EBB1C72B1B946C4B0011F5C3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				633646C21B8C657400FF45E2 /* Main.storyboard */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		EBB1C72C1B946C530011F5C3 /* Model */ = {

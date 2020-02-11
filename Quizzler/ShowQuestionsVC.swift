@@ -37,7 +37,7 @@ class ShowQuestionsVC: UIViewController{
     }
     
     @objc func action(){
-        if time == 30{
+        if time == 20{
             time = 0
             questionNumber = questionNumber + 1
             ProgressHUD.showError("Wrong!")
