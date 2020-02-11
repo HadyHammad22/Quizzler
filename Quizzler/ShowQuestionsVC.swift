@@ -12,27 +12,44 @@ import ProgressHUD
 class ShowQuestionsVC: UIViewController{
     
     //instance variables
-    var allQuestions:[Question]!
-    var category:String?
-    var pickedAnswer:String = "False"
-    var questionNumber:Int = 0
-    var score:Int = 0
+    var allQuestions : [Question]!
+    var category : String?
+    var pickedAnswer : String = "False"
+    var questionNumber : Int = 0
+    var score : Int = 0
+    var timer = Timer()
+    var time = 0
     
+    //Outlets
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var progressBar: UIView!
     @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var timerLbl: UILabel!
+    @IBOutlet weak var loweView: UIView!
     
+    //Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let firstQuestion = allQuestions[0]
         category = firstQuestion.category!
         questionLabel.text = firstQuestion.questionText?.replaceQuot()
-        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(action), userInfo: nil, repeats: true)
+    }
+    
+    @objc func action(){
+        if time == 30{
+            time = 0
+            questionNumber = questionNumber + 1
+            ProgressHUD.showError("Wrong!")
+            nextQuestion()
+        }else{
+            time = time+1
+            self.timerLbl.text = "\(time)"
+        }
     }
     
     @IBAction func answerPressed(_ sender: AnyObject) {
-        
+        time = 0
         if sender.tag == 1{
             pickedAnswer = "True"
         }
@@ -58,6 +75,7 @@ class ShowQuestionsVC: UIViewController{
             questionLabel.text = allQuestions[questionNumber].questionText?.replaceQuot()
             updateUI()
         }else{
+            timer.invalidate()
             performSegue(withIdentifier: "toScore", sender: nil)
         }
         
@@ -84,7 +102,6 @@ class ShowQuestionsVC: UIViewController{
         }else{
             UserDefaults.standard.set(score, forKey: category)
         }
-        
     }
     
     func isKeyPresentInUserDefaults(key: String) -> Bool {
@@ -92,7 +109,6 @@ class ShowQuestionsVC: UIViewController{
     }
     
     func checkAnswer() {
-
         guard let answer = allQuestions[questionNumber].answer else{return}
         if answer == pickedAnswer{
             ProgressHUD.showSuccess("Correct")
@@ -100,8 +116,6 @@ class ShowQuestionsVC: UIViewController{
         }else{
             ProgressHUD.showError("Wrong!")
         }
-        
     }
     
-
 }

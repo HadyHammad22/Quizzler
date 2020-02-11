@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="jsw-cg-KBp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="jsw-cg-KBp">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,20 +18,20 @@
                         <viewControllerLayoutGuide type="bottom" id="foN-hJ-2FT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yOi-kz-A1z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bnO-pz-78n">
-                                <rect key="frame" x="10" y="30" width="355" height="622"/>
+                                <rect key="frame" x="10" y="30" width="394" height="817"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-yz-vZT">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="148"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="197"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="th7-dr-fhX" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="197"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="any" translatesAutoresizingMaskIntoConstraints="NO" id="KXv-W3-LAx">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="70" id="2jb-ot-hBU"/>
@@ -35,7 +39,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N84-vj-ikj">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="21"/>
                                                         <state key="normal" title="ANY CATEGORY">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,10 +65,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxq-k9-kc6" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="185" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="204.5" y="0.0" width="189.5" height="197"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sport" translatesAutoresizingMaskIntoConstraints="NO" id="er0-Hy-cwe">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="70" id="Rkw-Re-nns"/>
@@ -72,7 +76,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18r-at-AW8">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                                         <state key="normal" title="SPORTS">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,13 +104,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2hO-bF-Syw">
-                                        <rect key="frame" x="0.0" y="158" width="355" height="148"/>
+                                        <rect key="frame" x="0.0" y="207" width="394" height="196.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-Si-ceJ" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="196.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="uBA-oP-Uvo">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Bp2-fD-y9x"/>
@@ -114,7 +118,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-nj-mXs">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="86.5"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                                         <state key="normal" title="HISTORY">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,10 +144,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-sO-txM" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="185" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="204.5" y="0.0" width="189.5" height="196.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-Fl-baJ">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="70" id="4WT-AU-y49"/>
@@ -151,7 +155,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-DF-gxs">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="86.5"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                                         <state key="normal" title="MUSIC">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,13 +183,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tRH-xr-dBj">
-                                        <rect key="frame" x="0.0" y="316" width="355" height="148"/>
+                                        <rect key="frame" x="0.0" y="413.5" width="394" height="197"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-37-KY0" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="197"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="computer" translatesAutoresizingMaskIntoConstraints="NO" id="4xn-uk-yhs">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="AVc-tx-v18"/>
@@ -193,7 +197,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnP-hc-gDi">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                                         <state key="normal" title="COMPUTER">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,10 +223,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-IK-sQl" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="185" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="204.5" y="0.0" width="189.5" height="197"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="3ri-aR-FLd">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="bbc-PH-9LJ"/>
@@ -230,7 +234,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQW-T8-2fB">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
                                                         <state key="normal" title="NATURE">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,13 +262,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-xZ-r1o">
-                                        <rect key="frame" x="0.0" y="474" width="355" height="148"/>
+                                        <rect key="frame" x="0.0" y="620.5" width="394" height="196.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-cA-PuE" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="196.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="knowledge" translatesAutoresizingMaskIntoConstraints="NO" id="4BS-Og-21q">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="0cy-oX-Ye0"/>
@@ -272,7 +276,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLH-Fb-iJg">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="86.5"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="23"/>
                                                         <state key="normal" title="KNOWLEDGE">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,10 +302,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-mm-2xM" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                                <rect key="frame" x="185" y="0.0" width="170" height="148"/>
+                                                <rect key="frame" x="204.5" y="0.0" width="189.5" height="196.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geography" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-jq-wjV">
-                                                        <rect key="frame" x="45" y="15" width="80" height="70"/>
+                                                        <rect key="frame" x="55" y="15" width="80" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="70" id="GZw-8m-TaR"/>
@@ -309,7 +313,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7W-3A-wht">
-                                                        <rect key="frame" x="5" y="105" width="160" height="38"/>
+                                                        <rect key="frame" x="5" y="105" width="179.5" height="86.5"/>
                                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="24"/>
                                                         <state key="normal" title="GEOGRAPHY">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -364,14 +368,14 @@
                         <viewControllerLayoutGuide type="bottom" id="bHU-qB-ZGs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrz-fI-Njc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="345"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GJ-Ce-brK" userLabel="Question Label">
-                                        <rect key="frame" x="16" y="28" width="343" height="290"/>
+                                        <rect key="frame" x="16" y="28" width="382" height="290"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -387,8 +391,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-ve-yfT">
-                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                                <rect key="frame" x="0.0" y="815" width="414" height="47"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evf-aR-0p6">
+                                        <rect key="frame" x="381" y="0.5" width="25" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="lNS-bY-mBD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsa-Z7-OdN">
                                         <rect key="frame" x="0.0" y="33" width="24" height="14"/>
                                         <color key="backgroundColor" red="0.92706394195556641" green="0.72759377956390381" blue="0.064024783670902252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,7 +416,7 @@
                                             <constraint firstAttribute="width" constant="52" id="EF7-9n-R0d"/>
                                             <constraint firstAttribute="height" constant="21" id="mfV-GR-EHO"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -411,17 +424,19 @@
                                 <color key="backgroundColor" red="0.16847139596939087" green="0.51802176237106323" blue="0.82454192638397217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Dsa-Z7-OdN" secondAttribute="bottom" id="0nb-fJ-4vp"/>
+                                    <constraint firstItem="evf-aR-0p6" firstAttribute="centerY" secondItem="qil-6C-XPA" secondAttribute="centerY" id="1GZ-TV-bQ6"/>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="top" secondItem="gHh-ve-yfT" secondAttribute="top" id="4Km-ra-lKe"/>
                                     <constraint firstItem="Dsa-Z7-OdN" firstAttribute="leading" secondItem="gHh-ve-yfT" secondAttribute="leading" id="Gsj-Tc-lMw"/>
+                                    <constraint firstAttribute="trailing" secondItem="evf-aR-0p6" secondAttribute="trailing" constant="8" id="WAk-eB-sY3"/>
                                     <constraint firstAttribute="height" constant="47" id="imV-DY-geY"/>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="leading" secondItem="gHh-ve-yfT" secondAttribute="leading" constant="8" id="pqZ-Kw-nVW"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-Ly-TJ0" userLabel="Lower Contianer">
-                                <rect key="frame" x="0.0" y="345" width="375" height="275"/>
+                                <rect key="frame" x="0.0" y="345" width="414" height="470"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5N-xc-sVz" userLabel="False Button">
-                                        <rect key="frame" x="222" y="60" width="128" height="56"/>
+                                        <rect key="frame" x="261" y="60" width="128" height="56"/>
                                         <color key="backgroundColor" red="0.78738981485366821" green="0.24644413590431213" blue="0.27221894264221191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="False">
                                             <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -491,6 +506,7 @@
                         <outlet property="progressBar" destination="Dsa-Z7-OdN" id="Jep-Z7-uzr"/>
                         <outlet property="progressLabel" destination="qil-6C-XPA" id="vOI-gf-aRi"/>
                         <outlet property="questionLabel" destination="4GJ-Ce-brK" id="pIn-gm-ACF"/>
+                        <outlet property="timerLbl" destination="evf-aR-0p6" id="Ucb-5V-ews"/>
                         <segue destination="5rN-ld-UbO" kind="modal" identifier="toScore" id="QGz-j5-HhA"/>
                     </connections>
                 </viewController>
@@ -507,20 +523,20 @@
                         <viewControllerLayoutGuide type="bottom" id="JIV-qM-Dao"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qvM-YM-Fvr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="award" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-Bo-98B">
-                                <rect key="frame" x="94" y="70" width="187.5" height="200"/>
+                                <rect key="frame" x="103.5" y="94" width="207" height="269"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llE-Jt-fZU" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                <rect key="frame" x="20" y="428" width="335" height="60"/>
+                                <rect key="frame" x="20" y="521" width="374" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tey-hB-yjS" customClass="RoundView" customModule="Quizzler" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="0.0" width="285" height="60"/>
+                                        <rect key="frame" x="25" y="0.0" width="324" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-NW-P5Q">
-                                                <rect key="frame" x="68" y="11.5" width="139.5" height="37"/>
+                                                <rect key="frame" x="87.5" y="11.5" width="139.5" height="37"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSF-i6-O5N">
                                                         <rect key="frame" x="0.0" y="0.0" width="117" height="37"/>
@@ -537,7 +553,7 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="kpM-XU-BC2">
-                                                <rect key="frame" x="225" y="5" width="50" height="50"/>
+                                                <rect key="frame" x="264" y="5" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Rq7-gy-TlJ"/>
                                                     <constraint firstAttribute="height" constant="50" id="bkD-pH-tWC"/>
@@ -573,13 +589,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High score is 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-YK-LVK">
-                                <rect key="frame" x="99.5" y="320" width="176" height="48"/>
+                                <rect key="frame" x="119" y="413" width="176" height="48"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI9-OC-DhI">
-                                <rect key="frame" x="120" y="597" width="135" height="40"/>
+                                <rect key="frame" x="120" y="792" width="174" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="x0j-ff-CDf"/>
                                 </constraints>
@@ -621,15 +637,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="any" width="384" height="384"/>
+        <image name="any" width="512" height="512"/>
         <image name="award" width="512" height="512"/>
-        <image name="computer" width="384" height="384"/>
-        <image name="geography" width="384" height="384"/>
-        <image name="history" width="384" height="384"/>
-        <image name="knowledge" width="384" height="384"/>
-        <image name="music" width="384" height="384"/>
-        <image name="nature" width="384" height="384"/>
-        <image name="sad" width="33.604373931884766" height="33.604373931884766"/>
-        <image name="sport" width="384" height="384"/>
+        <image name="computer" width="512" height="512"/>
+        <image name="geography" width="512" height="512"/>
+        <image name="history" width="512" height="512"/>
+        <image name="knowledge" width="512" height="512"/>
+        <image name="music" width="512" height="512"/>
+        <image name="nature" width="512" height="512"/>
+        <image name="sad" width="512" height="512"/>
+        <image name="sport" width="512" height="512"/>
     </resources>
 </document>
