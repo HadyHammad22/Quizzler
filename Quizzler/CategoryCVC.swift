@@ -16,7 +16,18 @@ class CategoryCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupComponents()
+    }
+    
+    // MARK :- SetupUI
+    func setupComponents(){
+        categoryView.addCornerRadius(10)
+        categoryView.addNormalShadow()
+    }
+    
+    func configure(category: Category){
+        self.categoryNameLbl.text = category.name
+        self.categoryImage.image = UIImage(named: category.name!)
     }
 
 }

@@ -13,6 +13,7 @@ import ProgressHUD
 class ChooseCategory: UIViewController {
     
     @IBOutlet weak var categoryCV: UICollectionView!
+    var listOfCategories = Category().list
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,15 +62,17 @@ class ChooseCategory: UIViewController {
 
 extension ChooseCategory: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return listOfCategories.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell = categoryCV.dequeueReusableCell(withReuseIdentifier: String(describing: CategoryCVC.self), for: indexPath) as! CategoryCVC
+        let category = self.listOfCategories[indexPath.row]
+        cell.configure(category: category)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width/2 - 10, height: 170)
+        return CGSize(width: collectionView.frame.size.width/2 - 10, height: 180)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

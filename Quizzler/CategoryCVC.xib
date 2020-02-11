@@ -22,17 +22,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjd-b6-7cl">
                         <rect key="frame" x="0.0" y="0.0" width="237" height="172"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-uC-pub">
-                                <rect key="frame" x="78.5" y="15" width="80" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NATURE" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-uC-pub">
+                                <rect key="frame" x="59.5" y="15" width="118.5" height="86"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="diI-Tx-9pH"/>
-                                    <constraint firstAttribute="width" constant="80" id="uGm-Mf-BVs"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANY CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIG-oI-ITa">
-                                <rect key="frame" x="5" y="105" width="227" height="26.5"/>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="22"/>
+                                <rect key="frame" x="0.0" y="121" width="237" height="24"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,10 +36,12 @@
                         <color key="backgroundColor" red="0.07861441995" green="0.65513959389999998" blue="0.1048144793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kud-uC-pub" firstAttribute="centerX" secondItem="yjd-b6-7cl" secondAttribute="centerX" id="5Ae-cW-7WY"/>
+                            <constraint firstItem="Kud-uC-pub" firstAttribute="height" secondItem="yjd-b6-7cl" secondAttribute="height" multiplier="0.5" id="HbH-XK-3Mc"/>
                             <constraint firstItem="DIG-oI-ITa" firstAttribute="top" secondItem="Kud-uC-pub" secondAttribute="bottom" constant="20" id="VwU-uU-XZJ"/>
-                            <constraint firstAttribute="trailing" secondItem="DIG-oI-ITa" secondAttribute="trailing" constant="5" id="hW9-0n-DiZ"/>
+                            <constraint firstItem="Kud-uC-pub" firstAttribute="width" secondItem="yjd-b6-7cl" secondAttribute="width" multiplier="0.5" id="WJO-aA-1io"/>
+                            <constraint firstAttribute="trailing" secondItem="DIG-oI-ITa" secondAttribute="trailing" id="hW9-0n-DiZ"/>
                             <constraint firstItem="Kud-uC-pub" firstAttribute="top" secondItem="yjd-b6-7cl" secondAttribute="top" constant="15" id="m6o-Ww-vPK"/>
-                            <constraint firstItem="DIG-oI-ITa" firstAttribute="leading" secondItem="yjd-b6-7cl" secondAttribute="leading" constant="5" id="ucl-w8-473"/>
+                            <constraint firstItem="DIG-oI-ITa" firstAttribute="leading" secondItem="yjd-b6-7cl" secondAttribute="leading" id="ucl-w8-473"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -65,6 +63,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="nature" width="512" height="512"/>
+        <image name="NATURE" width="512" height="512"/>
     </resources>
 </document>
