@@ -20,6 +20,8 @@
 		74E9925223646BCF00483E97 /* ScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9925123646BCF00483E97 /* ScoreVC.swift */; };
 		74EC4D1923F2B4770081924E /* CategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC4D1723F2B4770081924E /* CategoryCVC.swift */; };
 		74EC4D1A23F2B4770081924E /* CategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EC4D1823F2B4770081924E /* CategoryCVC.xib */; };
+		74EC4D1D23F2BFDB0081924E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC4D1C23F2BFDB0081924E /* Category.swift */; };
+		74EC4D1F23F2C0080081924E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC4D1E23F2C0080081924E /* UIView.swift */; };
 		74F69F5F236174050040130F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F69F5E236174050040130F /* Question.swift */; };
 		FE7D83054B676E42B0013701 /* Pods_Quizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792A2D0C9687724AE3B77936 /* Pods_Quizzler.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		74E9925123646BCF00483E97 /* ScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVC.swift; sourceTree = "<group>"; };
 		74EC4D1723F2B4770081924E /* CategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVC.swift; sourceTree = "<group>"; };
 		74EC4D1823F2B4770081924E /* CategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVC.xib; sourceTree = "<group>"; };
+		74EC4D1C23F2BFDB0081924E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		74EC4D1E23F2C0080081924E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		74F69F5E236174050040130F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		792A2D0C9687724AE3B77936 /* Pods_Quizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C67EE06C761DE213EAF75B2 /* Pods-Quizzler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzler.debug.xcconfig"; path = "Target Support Files/Pods-Quizzler/Pods-Quizzler.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				74ABB22723685BB800603385 /* String.swift */,
+				74EC4D1E23F2C0080081924E /* UIView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				74F69F5E236174050040130F /* Question.swift */,
 				742C242F23635EE70018A6BB /* QuestionBank.swift */,
+				74EC4D1C23F2BFDB0081924E /* Category.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -296,12 +302,14 @@
 				742C243023635EE80018A6BB /* QuestionBank.swift in Sources */,
 				74ABB22823685BB800603385 /* String.swift in Sources */,
 				742C242A2362EB190018A6BB /* RoundView.swift in Sources */,
+				74EC4D1F23F2C0080081924E /* UIView.swift in Sources */,
 				742C242E236336040018A6BB /* URLs.swift in Sources */,
 				74E9925223646BCF00483E97 /* ScoreVC.swift in Sources */,
 				742C242C236319DE0018A6BB /* ChooseCategory.swift in Sources */,
 				633646C11B8C657400FF45E2 /* ShowQuestionsVC.swift in Sources */,
 				74EC4D1923F2B4770081924E /* CategoryCVC.swift in Sources */,
 				633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */,
+				74EC4D1D23F2BFDB0081924E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
