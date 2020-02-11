@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ScoreVC: UIViewController{
     
@@ -20,6 +21,7 @@ class ScoreVC: UIViewController{
     // MARK :- Instance variables
     var score:Int = 0
     var category:String = ""
+    var player:AVAudioPlayer = AVAudioPlayer()
     
     // MARK :- LifeCycle
     override func viewDidLoad() {
@@ -35,6 +37,17 @@ class ScoreVC: UIViewController{
         updateScoreUI(score: score, category: category)
     }
     
+    func playSound(status: String) {
+        do{
+            if let audioPlayer = Bundle.main.path(forResource: status, ofType: "mp3"){
+                try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPlayer) as URL)
+                player.play()
+            }
+        }catch let err{
+            print(err.localizedDescription)
+        }
+    }
+    
     // MARK :- Actions
     @IBAction func buRestart(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -44,7 +57,11 @@ class ScoreVC: UIViewController{
     
     private func updateScoreUI(score: Int, category: String){
         if score > 6 {
+            playSound(status: "win")
             scoreImage.image = UIImage(named: "happy")
+        }else{
+            playSound(status: "lose")
+            scoreImage.image = UIImage(named: "sad")
         }
         self.scoreLabel.text = "\(score)"
         let highScore = UserDefaults.standard.integer(forKey: category)
