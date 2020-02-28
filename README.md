@@ -11,3 +11,6 @@ Show Questions categories and start the quiz, each question have 1 min and after
 
 # Answer Alert
 <img src="https://user-images.githubusercontent.com/53533148/75555603-671a7900-59f1-11ea-804e-53bed2f5c412.png" width="350" height="600">
+
+# Show Score
+<img src="https://user-images.githubusercontent.com/53533148/75555735-a8128d80-59f1-11ea-98d0-4245d81b3ba0.png" width="350" height="600">
